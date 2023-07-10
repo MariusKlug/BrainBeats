@@ -323,6 +323,7 @@ elseif contains(params.analysis,'rm_heart')
     com = sprintf("EEG = brainbeats_process(EEG,'analysis','%s','heart_signal','%s','heart_channels',{'%s'},'clean_eeg',%g,'vis',%g,'save',%g);",...
     params.analysis,params.heart_signal,params.heart_channels{:},params.clean_eeg,params.vis,params.save);
 end
+com=char(com);
 
 
 %%%%%%%%%%%%%%%%%%%%%%%% References %%%%%%%%%%%%%%%%%%%%%%%%
